@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大樂透</title>
+    <link rel="stylesheet" href="slotgame.css" />
+  </head>
+  <body>
+    <section class="slotgame">
+      <section class="content">
+        <section class="leftmeun">
+          <img src="大樂透.png" alt="" />
+
+          <div id="slotRule">
+            什麼是大樂透<span>?</span>
+            <div class="slot_bt_ani"></div>
+          </div>
+
+          <p>頭獎率約1/1,398萬<br />總中獎率約1/32</p>
+          <p>選擇投注號碼</p>
+          <div class="btn_position">
+            <button
+              class="buttonStyle"
+              type="button"
+              onclick="autoChoiceAniment()"
+            >
+              電腦選號
+            </button>
+            <button class="buttonStyle" type="button" onclick="reset()">
+              清除
+            </button>
+            <button class="buttonStyle" type="button" onclick="openWinner()">
+              開獎
+            </button>
+          </div>
+        </section>
+        <section class="contentAutoChoice">
+          <div id="content_Open">
+            <div class="Open_num">第2025-08-12期</div>
+            <div class="Open_num">開獎號碼</div>
+            <div id="openNum1"></div>
+          </div>
+          <div class="chossNum_area">
+            <div id="chossNum">
+              <!-- label[for=check$]>input[type=checkbox][value=$][name="chkRights[]"][id=check$]+{$} -->
+              <label for="check1"
+                ><input
+                  type="checkbox"
+                  value="1"
+                  name="chkRights[]"
+                  id="check1"
+                />01</label
+              ><label for="check2"
+                ><input
+                  type="checkbox"
+                  value="2"
+                  name="chkRights[]"
+                  id="check2"
+                />02</label
+              ><label for="check3"
+                ><input
+                  type="checkbox"
+                  value="3"
+                  name="chkRights[]"
+                  id="check3"
+                />03</label
+              ><label for="check4"
+                ><input
+                  type="checkbox"
+                  value="4"
+                  name="chkRights[]"
+                  id="check4"
+                />04</label
+              ><label for="check5"
+                ><input
+                  type="checkbox"
+                  value="5"
+                  name="chkRights[]"
+                  id="check5"
+                />05</label
+              ><label for="check6"
+                ><input
+                  type="checkbox"
+                  value="6"
+                  name="chkRights[]"
+                  id="check6"
+                />06</label
+              ><label for="check7"
+                ><input
+                  type="checkbox"
+                  value="7"
+                  name="chkRights[]"
+                  id="check7"
+                />07</label
+              ><label for="check8"
+                ><input
+                  type="checkbox"
+                  value="8"
+                  name="chkRights[]"
+                  id="check8"
+                />08</label
+              ><label for="check9"
+                ><input
+                  type="checkbox"
+                  value="9"
+                  name="chkRights[]"
+                  id="check9"
+                />09</label
+              ><label for="check10"
+                ><input
+                  type="checkbox"
+                  value="10"
+                  name="chkRights[]"
+                  id="check10"
+                />10</label
+              ><label for="check11"
+                ><input
+                  type="checkbox"
+                  value="11"
+                  name="chkRights[]"
+                  id="check11"
+                />11</label
+              ><label for="check12"
+                ><input
+                  type="checkbox"
+                  value="12"
+                  name="chkRights[]"
+                  id="check12"
+                />12</label
+              ><label for="check13"
+                ><input
+                  type="checkbox"
+                  value="13"
+                  name="chkRights[]"
+                  id="check13"
+                />13</label
+              ><label for="check14"
+                ><input
+                  type="checkbox"
+                  value="14"
+                  name="chkRights[]"
+                  id="check14"
+                />14</label
+              ><label for="check15"
+                ><input
+                  type="checkbox"
+                  value="15"
+                  name="chkRights[]"
+                  id="check15"
+                />15</label
+              ><label for="check16"
+                ><input
+                  type="checkbox"
+                  value="16"
+                  name="chkRights[]"
+                  id="check16"
+                />16</label
+              ><label for="check17"
+                ><input
+                  type="checkbox"
+                  value="17"
+                  name="chkRights[]"
+                  id="check17"
+                />17</label
+              ><label for="check18"
+                ><input
+                  type="checkbox"
+                  value="18"
+                  name="chkRights[]"
+                  id="check18"
+                />18</label
+              ><label for="check19"
+                ><input
+                  type="checkbox"
+                  value="19"
+                  name="chkRights[]"
+                  id="check19"
+                />19</label
+              ><label for="check20"
+                ><input
+                  type="checkbox"
+                  value="20"
+                  name="chkRights[]"
+                  id="check20"
+                />20</label
+              ><label for="check21"
+                ><input
+                  type="checkbox"
+                  value="21"
+                  name="chkRights[]"
+                  id="check21"
+                />21</label
+              ><label for="check22"
+                ><input
+                  type="checkbox"
+                  value="22"
+                  name="chkRights[]"
+                  id="check22"
+                />22</label
+              ><label for="check23"
+                ><input
+                  type="checkbox"
+                  value="23"
+                  name="chkRights[]"
+                  id="check23"
+                />23</label
+              ><label for="check24"
+                ><input
+                  type="checkbox"
+                  value="24"
+                  name="chkRights[]"
+                  id="check24"
+                />24</label
+              ><label for="check25"
+                ><input
+                  type="checkbox"
+                  value="25"
+                  name="chkRights[]"
+                  id="check25"
+                />25</label
+              ><label for="check26"
+                ><input
+                  type="checkbox"
+                  value="26"
+                  name="chkRights[]"
+                  id="check26"
+                />26</label
+              ><label for="check27"
+                ><input
+                  type="checkbox"
+                  value="27"
+                  name="chkRights[]"
+                  id="check27"
+                />27</label
+              ><label for="check28"
+                ><input
+                  type="checkbox"
+                  value="28"
+                  name="chkRights[]"
+                  id="check28"
+                />28</label
+              ><label for="check29"
+                ><input
+                  type="checkbox"
+                  value="29"
+                  name="chkRights[]"
+                  id="check29"
+                />29</label
+              ><label for="check30"
+                ><input
+                  type="checkbox"
+                  value="30"
+                  name="chkRights[]"
+                  id="check30"
+                />30</label
+              ><label for="check31"
+                ><input
+                  type="checkbox"
+                  value="31"
+                  name="chkRights[]"
+                  id="check31"
+                />31</label
+              ><label for="check32"
+                ><input
+                  type="checkbox"
+                  value="32"
+                  name="chkRights[]"
+                  id="check32"
+                />32</label
+              ><label for="check33"
+                ><input
+                  type="checkbox"
+                  value="33"
+                  name="chkRights[]"
+                  id="check33"
+                />33</label
+              ><label for="check34"
+                ><input
+                  type="checkbox"
+                  value="34"
+                  name="chkRights[]"
+                  id="check34"
+                />34</label
+              ><label for="check35"
+                ><input
+                  type="checkbox"
+                  value="35"
+                  name="chkRights[]"
+                  id="check35"
+                />35</label
+              ><label for="check36"
+                ><input
+                  type="checkbox"
+                  value="36"
+                  name="chkRights[]"
+                  id="check36"
+                />36</label
+              ><label for="check37"
+                ><input
+                  type="checkbox"
+                  value="37"
+                  name="chkRights[]"
+                  id="check37"
+                />37</label
+              ><label for="check38"
+                ><input
+                  type="checkbox"
+                  value="38"
+                  name="chkRights[]"
+                  id="check38"
+                />38</label
+              ><label for="check39"
+                ><input
+                  type="checkbox"
+                  value="39"
+                  name="chkRights[]"
+                  id="check39"
+                />39</label
+              ><label for="check40"
+                ><input
+                  type="checkbox"
+                  value="40"
+                  name="chkRights[]"
+                  id="check40"
+                />40</label
+              ><label for="check41"
+                ><input
+                  type="checkbox"
+                  value="41"
+                  name="chkRights[]"
+                  id="check41"
+                />41</label
+              ><label for="check42"
+                ><input
+                  type="checkbox"
+                  value="42"
+                  name="chkRights[]"
+                  id="check42"
+                />42</label
+              ><label for="check43"
+                ><input
+                  type="checkbox"
+                  value="43"
+                  name="chkRights[]"
+                  id="check43"
+                />43</label
+              ><label for="check44"
+                ><input
+                  type="checkbox"
+                  value="44"
+                  name="chkRights[]"
+                  id="check44"
+                />44</label
+              ><label for="check45"
+                ><input
+                  type="checkbox"
+                  value="45"
+                  name="chkRights[]"
+                  id="check45"
+                />45</label
+              ><label for="check46"
+                ><input
+                  type="checkbox"
+                  value="46"
+                  name="chkRights[]"
+                  id="check46"
+                />46</label
+              ><label for="check47"
+                ><input
+                  type="checkbox"
+                  value="47"
+                  name="chkRights[]"
+                  id="check47"
+                />47</label
+              ><label for="check48"
+                ><input
+                  type="checkbox"
+                  value="48"
+                  name="chkRights[]"
+                  id="check48"
+                />48</label
+              ><label for="check49"
+                ><input
+                  type="checkbox"
+                  value="49"
+                  name="chkRights[]"
+                  id="check49"
+                />49</label
+              >
+            </div>
+          </div>
+          <div id="content_Open2" class="content_Open2_ani ">
+            <div id="openNum2">
+              <p>投注號碼:</p>
+              <p>中獎號碼數量:</p>
+              <p>中獎號碼:</p>
+              <p>特別號:</p>
+              <p>獎項:</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="rule_area">
+        <div class="bt_rule_close">
+          <div class="bt_pic01"></div>
+          <div class="bt_pic02"></div>
+        </div>
+        <div id="rule_ani">
+          <h4>什麼是大樂透?</h4>
+          <p>大樂透是一種樂透型遊戲。</p>
+          <p>
+            您必須從01~49中任選6個號碼進行投注。<br />
+            開獎時，開獎單位將隨機開出六個號碼加一個特別號，這一組號碼就是該期大樂透的中獎號碼，也稱為「獎號」。<br />
+            您的六個選號中，如果有三個以上（含三個號碼）對中當期開出之六個號碼（特別號只適用於貳獎、肆獎、陸獎和柒獎），即為中獎，並可依規定兌領獎金。<br />
+            各獎項的中獎方式如下表：
+          </p>
+          <table>
+            <tr>
+              <th><p>獎項</p></th>
+              <th><p>中獎方式</p></th>
+              <th><p>中獎方式圖示</p></th>
+              <th><p>中獎獎金</p></th>
+            </tr>
+            <tr>
+              <th><p>頭獎</p></th>
+              <td><p>與當期六個獎號完全相同者</p></td>
+              <th><p>OOOOOO</p></th>
+              <td></td>
+            </tr>
+            <tr>
+              <th><p>二獎</p></th>
+              <td><p>對中當期獎號之任五碼+特別號</p></td>
+              <th><p></p></th>
+              <td><p></p></td>
+            </tr>
+            <tr>
+              <th><p>三獎</p></th>
+              <td><p>對中當期獎號之任五碼</p></td>
+              <th></th>
+              <td></td>
+            </tr>
+            <tr>
+              <th><p>四獎</p></th>
+              <td><p>對中當期獎號之任四碼+特別號</p></td>
+              <th></th>
+              <td></td>
+            </tr>
+            <tr>
+              <th><p>五獎</p></th>
+              <td><p>對中當期獎號之任四碼</p></td>
+              <th></th>
+              <td><p>$2,000</p></td>
+            </tr>
+            <tr>
+              <th><p>六獎</p></th>
+              <td><p>對中當期獎號之任三碼+特別號</p></td>
+              <th></th>
+              <td><p>$1,000</p></td>
+            </tr>
+            <tr>
+              <th><p>七獎</p></th>
+              <td><p>對中當期獎號之任兩碼+特別號</p></td>
+              <th></th>
+              <td><p>$400</p></td>
+            </tr>
+            <tr>
+              <th><p>普獎</p></th>
+              <td><p>對中當期獎號之任三碼</p></td>
+              <th></th>
+              <td><p>$400</p></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </section>
+    <div class="bgsec"></div>
+    <!-- <script src="./comlib.js"></script> -->
+    <script src="./slotgame_02.js"></script>
+  </body>
+</html>
